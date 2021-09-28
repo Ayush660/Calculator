@@ -1,0 +1,52 @@
+body {
+    background-image: linear-gradient(to bottom left, white, black)
+}
+
+@keyframes animate {
+    from {
+        border-color: yellow
+    }
+
+    to {
+        border-color: red
+    }
+}
+
+table,
+th,
+td {
+    border: 1px dashed yellow;
+    background-color: black;
+    color: whitesmoke;
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+th,
+td {
+    width: 2cm;
+    height: 2cm;
+}
+
+#result {
+    font-size: 1cm
+}
+
+h1 {
+    color: yellow;
+}
+
+input[type=button] {
+    width: 100%;
+    height: 100%;
+}
+
+input[type=button]:hover {
+    background-color: blue;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    transform: scale(0.9);
+}
